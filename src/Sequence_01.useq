@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="game.SinglePlayer" project="Snake2.0" file="/Snake2.0/src/game/SinglePlayer.java" 
+    binary="false" label="singlePlayer" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="56" y="0"/>    
+    <execution id="2">      
+      <position height="1269" width="94" x="5" y="89"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="0" x="0" y="310"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="21" width="0" x="0" y="393"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="21" width="0" x="0" y="468"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="21" width="0" x="0" y="579"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="21" width="0" x="0" y="651"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="21" width="0" x="0" y="823"/>    
+    </execution>    
+    <execution id="30">      
+      <position height="21" width="0" x="0" y="940"/>    
+    </execution>  
+  </object>  
+  <object id="45" language="java" name="game.Food" project="Snake2.0" file="/Snake2.0/src/game/Food.java" binary="false" 
+    label="food" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="36">      
+      <position height="21" width="0" x="0" y="1096"/>    
+    </execution>  
+  </object>  
+  <object id="46" language="java" name="game.Poison" project="Snake2.0" file="/Snake2.0/src/game/Poison.java" 
+    binary="false" label="poison" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="32">      
+      <position height="21" width="0" x="0" y="996"/>    
+    </execution>    
+    <execution id="38">      
+      <position height="21" width="62" x="157" y="1127"/>    
+    </execution>    
+    <execution id="40">      
+      <position height="21" width="62" x="157" y="1166"/>    
+    </execution>    
+    <execution id="42">      
+      <position height="21" width="62" x="157" y="1232"/>    
+    </execution>    
+    <execution id="44">      
+      <position height="21" width="62" x="157" y="1316"/>    
+    </execution>  
+  </object>  
+  <object id="47" language="java" name="game.Unit" project="Snake2.0" file="/Snake2.0/src/game/Unit.java" binary="false" 
+    label="unit" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="22">      
+      <position height="21" width="0" x="0" y="701"/>    
+    </execution>  
+  </object>  
+  <object id="48" language="java" name="game.Snake" project="Snake2.0" file="/Snake2.0/src/game/Snake.java" 
+    binary="false" label="snake" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="59" x="103" y="110"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="21" width="59" x="103" y="162"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="59" x="103" y="213"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="21" width="59" x="103" y="532"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="21" width="59" x="152" y="744"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="21" width="59" x="152" y="890"/>    
+    </execution>    
+    <execution id="34">      
+      <position height="21" width="59" x="218" y="1049"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="49" interaction-operator="OPT">    
+    <interaction-operand id="50" constraint="isAlive == false">      
+      <fragment refId="9"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="51" interaction-operator="OPT">    
+    <interaction-operand id="52" constraint="eat() == true">      
+      <fragment refId="17"/>      
+      <fragment refId="19"/>      
+      <fragment refId="23"/>      
+      <fragment refId="15"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="53" interaction-operator="OPT">    
+    <interaction-operand id="54" constraint="eat() == true">      
+      <fragment refId="27"/>      
+      <fragment refId="31"/>      
+      <fragment refId="29"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="55" interaction-operator="OPT">    
+    <interaction-operand id="56" constraint="noLife == true">      
+      <fragment refId="41"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="57" interaction-operator="OPT">    
+    <interaction-operand id="58" constraint="noLife == false">      
+      <fragment refId="43"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" operation="isAlive():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="move():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="isAlive():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="topScore():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="generatePoison():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="eat(game.Unit,game.Unit):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="addScore():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" operation="writeScore():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="generateFood():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="Unit(javafx.scene.canvas.GraphicsContext,int,int,javafx.scene.paint.Color)" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="add(game.Unit):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="eat(game.Unit,game.Unit):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="27" operation="decScore():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="29" operation="writeScore():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="30"/>  
+  </message>  
+  <message id="31" operation="delete():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="32"/>  
+  </message>  
+  <message id="33" operation="draw():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="34"/>  
+  </message>  
+  <message id="35" operation="draw():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="36"/>  
+  </message>  
+  <message id="37" operation="decLife():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="38"/>  
+  </message>  
+  <message id="39" operation="noLife():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="40"/>  
+  </message>  
+  <message id="41" operation="delete():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="42"/>  
+  </message>  
+  <message id="43" operation="draw():void" asynchronous="false" x="62" y="1296">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="44"/>  
+  </message>
+</sequence-diagram>
